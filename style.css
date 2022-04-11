@@ -58,7 +58,7 @@ button:hover {
     background-size: contain;
     position: absolute;
     animation: mymove 400s infinite linear;
-    top: 41%;
+    top: 42%;
     height: 50px;
     width: 130000vw;
 }
