@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(183, 183, 183);
+    background-image: url(mario-back.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+h3 {
+    color: white;
+    background-color: #000000;
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    top: 56%;
+    left: 40%;
+}
+
+
+
+.game {
+    width: 80vw;
+    height: 200px;
+    border: 5px solid #000000;
+    border-bottom: none;
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(14, 147, 199), white 96%);
+    box-shadow: 1px 1px 30px rgb(37, 2, 2);
+    margin-top: 100px;
+
+
+}
+
+.ground {
+    background-color: #cd0303;
+    background-image: url(floor.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: absolute;
+    animation: mymove 400s infinite linear;
+    height: 50px;
+    width: 130000vw;
+    margin-top: -130px;
+}
+
+
+@keyframes mymove {
+    0% {
+        left: -30vw;
+    }
+
+    100% {
+        left: -13000vw;
+    }
+
+    
+}
+
+#score {
+    background-color: #000000;
+    color: white;
+    position: absolute;
+    font-size: 2vw;
+    top: 10%;
+    padding: 10px;
+}
+
+#high-score {
+    background-color: #000000;
+    color: white;
+    position: absolute;
+    font-size: 2vw;
+    top: 10%;
+    padding: 10px;
+
+    left: 76.5%;
+}
+
+#mario {
+    width: 50px;
+    height: 60px;
+    margin-left: 10px;
+    background-image: url(mario.gif);
+    background-size: auto 60px;
+    position: relative;
+    top: 143px;
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 143px;
+        /*distance from top of the parent element i.e. gameing boards top*/
+    }
+
+    15% {
+        top: 120px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    50% {
+        top: 50px;
+    }
+
+    80% {
+        top: 100px;
+    }
+
+    90% {
+        top: 120px;
+    }
+
+    100% {
+        top: 143px;
+    }
+}
+
+#pipe {
+    width: 30px;
+    height: 50px;
+    position: relative;
+    top: 90px;
+    left: 80vw;
+    /*width of frame - width of cactus*/
+    background-image: url(Mario_pipe.png);
+    /* filter: invert(); */
+    background-size: 30px 50px;
+    animation: cactus-block 2s infinite linear;
+}
+
+#pipe-2 {
+    width: 30px;
+    height: 50px;
+    position: relative;
+    top: 40px;
+    left: 80vw;
+    /*width of frame - width of cactus*/
+    background-image: url(Mario_pipe.png);
+    background-size: 30px 50px;
+    animation: cactus-block 3s infinite ease-in;
+}
+
+#cloud {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: -70%;
+    left: 80vw;
+    background-size: 100px 50px;
+    background-image: url(clouds-1.png);
+    animation: clouds 15s infinite linear;
+}
+
+#clouds {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -100%;
+    left: 80vw;
+    background-size: 120px 120px;
+    background-image: url(clouds-2.png);
+    animation: clouds 21s infinite linear;
+}
+
+@keyframes cactus-block {
+    0% {
+        left: 75vw;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes clouds {
+    0% {
+        left: 75vw;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
