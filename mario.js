@@ -1,6 +1,7 @@
 const mario = document.getElementById('mario');
 const pipe = document.getElementById('pipe');
 const pipePlus = document.getElementById('pipe-2');
+const myAudio = new Audio ('mario-music.mp3')
 const jumpMusic = new Audio("jump-2.mp3");
 const highScoreAudio = new Audio("highscore.mp3");
 const gameOver = new Audio('gameOver.mp3')
@@ -92,7 +93,6 @@ var dispalyScore = function score() {
 
 
 //function for background music
-const myAudio = new Audio ('mario-music.mp3')
 
 // function playAudio() { 
 //     myAudio.play(); 
