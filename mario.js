@@ -6,7 +6,7 @@ const highScoreAudio = new Audio("highscore.mp3");
 const gameOver = new Audio('gameOver.mp3')
 var score = 0;
 var highScore = 0;
-
+myAudio.play(); 
 
 
 
@@ -103,7 +103,7 @@ const myAudio = new Audio ('mario-music.mp3')
 // };
 
 
-myAudio.play(); 
+
 
 
 // localStorage.clear();
