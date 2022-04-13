@@ -95,7 +95,9 @@ var dispalyScore = function score() {
 //function for background music
 
 function playAudio(  ) { 
-   if(myAudio.pause == true) {myAudio.play()}; 
+   if(myAudio.pause == true) {
+       myAudio.play
+   }; 
 }; 
 
 playAudio();
