@@ -7,7 +7,7 @@ const highScoreAudio = new Audio("highscore.mp3");
 const gameOver = new Audio('gameOver.mp3')
 var score = 0;
 var highScore = 0;
-myAudio.play(); 
+playAudio();
 
 
 
@@ -94,13 +94,13 @@ var dispalyScore = function score() {
 
 //function for background music
 
-function playAudio(  ) { 
-   if(myAudio.pause == true) {
-       myAudio.play
-   }; 
+function  playAudio() { 
+    myAudio.loop = true;
+    myAudio.play();
 }; 
 
-playAudio();
+
+
 
 
 
