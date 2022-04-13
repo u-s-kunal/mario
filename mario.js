@@ -98,7 +98,7 @@ function playAudio(  ) {
    if(myAudio.pause == true) {myAudio.play()}; 
 }; 
 
-
+playAudio();
 
 
 
